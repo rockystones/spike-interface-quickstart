@@ -1,11 +1,37 @@
 # spike-interface-quickstart
-My quick start on using the spike interface project 
+My quick start on using the spike interface project. 
 
-It's an incredible project with tremendous effort, the documentation is nice and detailed, but still, it is a group effort, as the volume of document grow, some of it will be confusing, and it is a little daunting for graduate students to start learning about it on their own without the help of experienced users, especially when we are not very coding savvy and familiar with using terminals/command lines. 
+It's an incredible project with tremendous group effort, the documentation is nice and detailed. But it is a little daunting for graduate students to start learning about it on their own without the help of experienced users, especially when we are not very coding savvy and familiar with using terminals/command lines. 
 
-The hope of this quick start is the same as the "hello world!" when you are starting to learn coding. 
+In addition, as the volume of document grow and the project evolving, some of it will inevitably become a little outdated and confusing. It will be even more frustrating for new users who are just starting.  
 
-Documenting my exploration with the project so others can learn from my experience. 
+The hope of this quick start is the same as the "hello world!" when you are starting to learn coding.
+
+Documenting my exploration with Version 0.102.3 project so others can learn from my experience. 
+
+# A little note
+
+### Motivation for trying this: 
+
+I've got tons of ephys data to analyze. I don't want to do tons of manual curation. I am hoping the consensus of different sorters will help replace the manual sorting process. The time spend in learning about this project might end up being a lot less than myself manually curating hundreds of recording sessions. 
+
+I am dealing with different file formats from different recording systems. Although many manufacture provide their data reading and exporting package, they are not easy to use. I am hoping at least the data interface module is useful in reading and exporting. Especially when we are required to publish the data in accessible format NWB.
+
+I used the automated sorting from Plexon Offline SorterV3, and I am not very satisfied. I used early versions of Mountainsort, but it has to be running on Linux, not convenient for a lab that mostly use Windows desktops and workstations. 
+
+### What beginners should expect: 
+
+There is quite a learning curve. You should at least have some coding background, doesn't have to be Python, but enough to be comfortable reading the official doc and understand basic debugging process. Otherwise it will be too hard to learn it by yourself. It's better to find someone else who have use it before to collaborate on it. 
+
+You will need a lot of time to troubleshoot. The docs were written by developers and experienced users, they might omit some details that seems too obvious to them but not to you. The demos are tested in running environment well tuned, but you will encounter errors/conflicts when setting up in your environment, or after you ran package updates. 
+
+Focus on getting the basic demo running first, to help understand the structure and functions of the project. Then adapt to your own data, and later develop your own pipeline and workflow. 
+
+Always refer to the official doc first for answers, then the GitHub issues, finally try to reach out to developers if you still cannot find anything. 
+
+Developer community appreaciate many forms of contribution. https://spikeinterface.readthedocs.io/en/stable/development/development.html#how-to-contribute 
+
+You will need to learn a bunch of new things but no need to be afraid. Bugs or error messages are not like running wet lab or animal experiments. Once you get comfortable using this open source tool, you will be more confident in trying out other open source tools and maybe one day release your own.
 
 # Terminal for dummies
 Getting familiar with using the terminal, especially the anaconda terminal/prompt/command line interface (or CLI)
