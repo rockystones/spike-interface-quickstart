@@ -9,6 +9,10 @@ The hope of this quick start is the same as the "hello world!" when you are star
 
 Documenting my exploration with Version 0.102.3 project so others can learn from my experience. 
 
+Two places I visited most often for answers: 
+https://spikeinterface.readthedocs.io/
+https://github.com/SpikeInterface
+
 # A little note
 
 ### Motivation for trying this: 
@@ -33,7 +37,9 @@ Developer community appreaciate many forms of contribution. https://spikeinterfa
 
 You will need to learn a bunch of new things but no need to be afraid. Bugs or error messages are not like running wet lab or animal experiments. Once you get comfortable using this open source tool, you will be more confident in trying out other open source tools and maybe one day release your own.
 
-# Terminal for dummies
+# Some background stuff to learn about in case you didn't already know
+
+### Terminal for dummies
 Getting familiar with using the terminal, especially the anaconda terminal/prompt/command line interface (or CLI)
 
 https://www.lancaster.ac.uk/staff/drummonn/PHYS281/demo-terminal/
@@ -42,21 +48,41 @@ https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html
 
 https://docs.conda.io/projects/conda/en/stable/user-guide/cheatsheet.html
 
-# IDE for dummies
+### IDE for dummies
 You can't just keep typing code to the terminal all the time in real time. Hence the need for IDE/text editors, take your time with codings and then run everything all together.
+https://wiki.python.org/moin/IntegratedDevelopmentEnvironments
 
-Use Jupyternotebook: 
+### Use Jupyternotebook: 
+Notebook vs IDE
+https://afry.com/en/insight/data-science-in-notebooks-vs-ides
+https://www.shiksha.com/online-courses/articles/jupyter-notebook-vs-python-idle/
+
 https://jupyter.org/install
 
 https://docs.jupyter.org/en/latest/
 
-# GitHub for dummies
+Jupyter note books are files using "ipynb" extension. 
+
+Jupytext provides command line interface for converting notebooks between the different formats. https://jupytext.readthedocs.io/en/latest/using-cli.html
+```
+jupytext --to py notebook.ipynb                 # convert notebook.ipynb to a .py file
+jupytext --to markdown notebook.ipynb           # convert notebook.ipynb to a .md file
+jupytext --output script.py notebook.ipynb      # convert notebook.ipynb to a script.py file
+jupytext --to notebook notebook.py              # convert notebook.py to an .ipynb file with no outputs
+```
+
+### GitHub for dummies
 
 https://github.com/classroom-resources/github-starter-course
 
 https://www.youtube.com/watch?v=8Dd7KRpKeaE
 
-# where do I start if I am using windows? 
+### Docker for Dummies
+https://www.docker.com/101-tutorial/
+
+https://docker-curriculum.com/
+
+# Where do I start if I am using windows? 
 
 Why I have to start from windows machine? Mac and Linux are great for coding and programming, but most equipment have better compatibility with windows. 
 
@@ -92,12 +118,7 @@ Download and install Docker desktop for windows, register an account, login, upd
 
 ![image](https://github.com/user-attachments/assets/76bc2625-1605-41d3-80a9-c93b8272a762)
 
-#### Docker for Dummies
-https://www.docker.com/101-tutorial/
-
-https://docker-curriculum.com/
-
-### Quick tutorial
+## Quick tutorial
 
 Start following the **Quickstart tutorial** to get the hello world running on demo data.
 
@@ -114,6 +135,23 @@ Some errors are because the demo code was a little outdated.
 Some warnings and error messages are common and will likely happen very often in the future. Deprecation warnings, 
 
 ![image](https://github.com/user-attachments/assets/8c8d05a3-cb4a-4b93-b558-33ece96dac51)
+
+### More demos to try 
+
+Aside from this quickstart tutorial, there are quite a few Jupyter notebook demos you can try after you are done with the quickstart.  
+
+Spikeinterface repo examples. https://github.com/SpikeInterface/spikeinterface/tree/main/examples
+Many are what you see from the https://spikeinterface.readthedocs.io/
+Many examples here are in the form of python script files with ".py" extension. Those "py" files you can directly run from the python kernel/terminal. 
+You can use jupytext https://jupytext.readthedocs.io/ to convert from py script format to ipynb Jupyter notebook format.
+`jupytext --to notebook <name_of_script_file>.py`
+
+SpikeInterface Reports notebook collections
+https://spikeinterface.github.io/ 
+
+Spike tutorial repo https://github.com/SpikeInterface/spiketutorials/ 
+
+This repo contains tutorials for using each package in spikeinterface. These tutorials range from basic to advanced and cover many powerful functionalities enabled by SpikeInterface.
 
 
 ### Get it working for my own data
