@@ -70,6 +70,7 @@ jupytext --to markdown notebook.ipynb           # convert notebook.ipynb to a .m
 jupytext --output script.py notebook.ipynb      # convert notebook.ipynb to a script.py file
 jupytext --to notebook notebook.py              # convert notebook.py to an .ipynb file with no outputs
 ```
+If you want to skip one cell when running the notebook, turn that cell into the "Raw" format (Esc + r), so it will not be parsed as "code". 
 
 ### GitHub for dummies
 
