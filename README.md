@@ -9,9 +9,9 @@ The hope of this quick start is the same as the "hello world!" when you are star
 
 Documenting my exploration with Version 0.102.3 project so others can learn from my experience. 
 
-Two places I visited most often for answers: 
-https://spikeinterface.readthedocs.io/
-https://github.com/SpikeInterface
+**Two places I visited most often for answers:**
+**Read the docs:** https://spikeinterface.readthedocs.io/
+**GitHubRepo:** https://github.com/SpikeInterface
 
 # A little note
 
@@ -33,7 +33,7 @@ Focus on getting the basic demo running first, to help understand the structure 
 
 Always refer to the official doc first for answers, then the GitHub issues, finally try to reach out to developers if you still cannot find anything. 
 
-Developer community appreaciate many forms of contribution. https://spikeinterface.readthedocs.io/en/stable/development/development.html#how-to-contribute 
+[Developer community appreaciate many forms of contribution](https://spikeinterface.readthedocs.io/en/stable/development/development.html#how-to-contribute ). 
 
 You will need to learn a bunch of new things but no need to be afraid. Bugs or error messages are not like running wet lab or animal experiments. Once you get comfortable using this open source tool, you will be more confident in trying out other open source tools and maybe one day release your own.
 
@@ -63,14 +63,14 @@ https://docs.jupyter.org/en/latest/
 
 Jupyter note books are files using "ipynb" extension. 
 
-Jupytext provides command line interface for converting notebooks between the different formats. https://jupytext.readthedocs.io/en/latest/using-cli.html
+Jupytext provides [command line interface](https://jupytext.readthedocs.io/en/latest/using-cli.html) for converting notebooks between the different formats. 
 ```
 jupytext --to py notebook.ipynb                 # convert notebook.ipynb to a .py file
 jupytext --to markdown notebook.ipynb           # convert notebook.ipynb to a .md file
 jupytext --output script.py notebook.ipynb      # convert notebook.ipynb to a script.py file
 jupytext --to notebook notebook.py              # convert notebook.py to an .ipynb file with no outputs
 ```
-Also note here https://github.com/SpikeInterface/spikeinterface/blob/main/examples/how_to/README.md
+Also [note here at spikeinterface repo](https://github.com/SpikeInterface/spikeinterface/blob/main/examples/how_to/README.md).
 
 If you want to skip one cell when running the notebook, turn that cell into the "Raw" format (Esc + r), so it will not be parsed as "code". 
 
@@ -90,11 +90,8 @@ https://docker-curriculum.com/
 Why I have to start from windows machine? Mac and Linux are great for coding and programming, but most equipment have better compatibility with windows. 
 
 ### Install the package
-Start with installing anaconda and follow the beginner's instruction here.
-
-https://spikeinterface.readthedocs.io/en/stable/get_started/installation.html#for-beginners
-
-https://github.com/SpikeInterface/spikeinterface/tree/main/installation_tips
+Start with installing anaconda and follow the [beginner's instruction on readthedocs](https://spikeinterface.readthedocs.io/en/stable/get_started/installation.html#for-beginners
+) and the [spikeinterface repo](https://github.com/SpikeInterface/spikeinterface/tree/main/installation_tips).
 
 Download the **full_spikeinterface_environment_windows.yml**, and cd to where the yml is downloaded to run the installation within the conda virtual environment.
 `conda env create --file full_spikeinterface_environment_windows.yml`
@@ -139,13 +136,23 @@ Some warnings and error messages are common and will likely happen very often in
 
 ![image](https://github.com/user-attachments/assets/8c8d05a3-cb4a-4b93-b558-33ece96dac51)
 
+### How to troubleshoot the bugs?
+
+Follow the error message traceback to find the function that is causing the error. Refer to the corresponding [module documentation](https://spikeinterface.readthedocs.io/en/stable/modules/index.html) for general instructions: 
+Then check the [API doc](https://spikeinterface.readthedocs.io/en/stable/api.html#) for more detailed information on how the functions are defined (class, input, output, etc).
+
+
+For example 
+
+https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.SortingAnalyzer.compute
+
 ### More demos to try 
 
 Aside from this quickstart tutorial, there are quite a few Jupyter notebook demos you can try after you are done with the quickstart.Good things is after you get everything running for the quickstart, you will have less issues with the other demos.   
 
-Spikeinterface repo examples. https://github.com/SpikeInterface/spikeinterface/tree/main/examples
+[Spikeinterface repo examples](https://github.com/SpikeInterface/spikeinterface/tree/main/examples). 
 Many are what you see from the https://spikeinterface.readthedocs.io/
-You can find python format and jupyter notebook format tutorials here: https://spikeinterface.readthedocs.io/en/stable/tutorials_custom_index.html#download-all-examples
+You can find python format and jupyter notebook format tutorials at the [bottom of the tutorial page](https://spikeinterface.readthedocs.io/en/stable/tutorials_custom_index.html#download-all-examples): 
 
 Many examples here are in the form of python script files with ".py" extension. Those "py" files you can directly run from the python kernel/terminal. 
 You can use jupytext https://jupytext.readthedocs.io/ to convert from py script format to ipynb Jupyter notebook format.
