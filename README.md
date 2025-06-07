@@ -141,10 +141,12 @@ Some warnings and error messages are common and will likely happen very often in
 
 ### More demos to try 
 
-Aside from this quickstart tutorial, there are quite a few Jupyter notebook demos you can try after you are done with the quickstart.  
+Aside from this quickstart tutorial, there are quite a few Jupyter notebook demos you can try after you are done with the quickstart.Good things is after you get everything running for the quickstart, you will have less issues with the other demos.   
 
 Spikeinterface repo examples. https://github.com/SpikeInterface/spikeinterface/tree/main/examples
 Many are what you see from the https://spikeinterface.readthedocs.io/
+You can find python format and jupyter notebook format tutorials here: https://spikeinterface.readthedocs.io/en/stable/tutorials_custom_index.html#download-all-examples
+
 Many examples here are in the form of python script files with ".py" extension. Those "py" files you can directly run from the python kernel/terminal. 
 You can use jupytext https://jupytext.readthedocs.io/ to convert from py script format to ipynb Jupyter notebook format.
 `jupytext --to notebook <name_of_script_file>.py`
